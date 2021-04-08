@@ -32,6 +32,4 @@ func main() {
 	log.Printf("Starting server on %s:\n", *addr)
 	err = srv.ListenAndServe()
 	log.Fatal(err)
-	//err = srv.ListenAndServeTLS("/etc/letsencrypt/live/staging.jonppenny.co.uk/cert.pem", "/etc/letsencrypt/live/staging.jonppenny.co.uk/privkey.pem")
-	//log.Fatal(err)
 }
